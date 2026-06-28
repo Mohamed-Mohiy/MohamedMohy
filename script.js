@@ -23,6 +23,13 @@ const projects = [
     roas: '6.2x',
     revenue: '$9,300',
     leads: '340',
+    // TODO: Replace this URL with your project thumbnail image
+    thumb: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=400&q=80',
+    // TODO: Replace these URLs with your project screenshot images
+    screenshots: [
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80'
+    ]
   },
   {
     brand: 'Beauty Brand',
@@ -34,6 +41,13 @@ const projects = [
     roas: '4.8x',
     revenue: '$14,400',
     leads: '820',
+    // TODO: Replace this URL with your project thumbnail image
+    thumb: 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=400&q=80',
+    // TODO: Replace these URLs with your project screenshot images
+    screenshots: [
+      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80',
+      'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80'
+    ]
   },
   {
     brand: 'Real Estate Agency',
@@ -45,6 +59,13 @@ const projects = [
     roas: '8.1x',
     revenue: '$16,200',
     leads: '215',
+    // TODO: Replace this URL with your project thumbnail image
+    thumb: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80',
+    // TODO: Replace these URLs with your project screenshot images
+    screenshots: [
+      'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=400&q=80',
+      'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=400&q=80'
+    ]
   },
 ];
 
@@ -65,9 +86,33 @@ const chartData = [
 ];
 
 let testimonials = [
-  { name: 'Dr. Sarah Hassan', role: { en: 'Medical Clinic Owner, Cairo', ar: 'مالكة عيادة طبية، القاهرة' }, text: { en: '"Mohamed transformed our clinic\'s patient acquisition. We went from 20 leads a month to over 150. His understanding of the healthcare space is unmatched."', ar: '"غيّر محمد طريقة استقطاب مرضانا. انتقلنا من 20 عميلاً محتملاً شهرياً إلى أكثر من 150. فهمه لقطاع الرعاية الصحية لا مثيل له."' }, rating: 5, initials: 'SH' },
-  { name: 'Karim Mostafa', role: { en: 'E-Commerce Brand Owner', ar: 'مالك علامة تجارية إلكترونية' }, text: { en: '"Our ROAS was 1.8x before Mohamed. Six weeks later, we\'re at 5.2x with the same budget. The creative testing approach alone was worth every penny."', ar: '"كان عائدنا على الإنفاق 1.8 قبل محمد. بعد ستة أسابيع، وصلنا إلى 5.2 بنفس الميزانية. نهج اختبار الإبداعات وحده كان يستحق كل قرش."' }, rating: 5, initials: 'KM' },
-  { name: 'Nour Al-Amin', role: { en: 'Beauty Brand Founder, Dubai', ar: 'مؤسسة علامة تجارية للجمال، دبي' }, text: { en: '"Professional, data-obsessed, and delivers results. Mohamed is our long-term ads partner and I wouldn\'t trust anyone else with our Meta budget."', ar: '"محترف، مهووس بالبيانات، ويُحقق النتائج. محمد هو شريكنا الإعلاني على المدى البعيد ولن أثق بأحد غيره في ميزانية Meta الخاصة بنا."' }, rating: 5, initials: 'NA' },
+  { 
+    name: 'Dr. Sarah Hassan', 
+    role: { en: 'Medical Clinic Owner, Cairo', ar: 'مالكة عيادة طبية، القاهرة' }, 
+    text: { en: '"Mohamed transformed our clinic\'s patient acquisition. We went from 20 leads a month to over 150. His understanding of the healthcare space is unmatched."', ar: '"غيّر محمد طريقة استقطاب مرضانا. انتقلنا من 20 عميلاً محتملاً شهرياً إلى أكثر من 150. فهمه لقطاع الرعاية الصحية لا مثيل له."' }, 
+    rating: 5, 
+    initials: 'SH',
+    // TODO: Replace this URL with your client's avatar image
+    img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=100&q=80'
+  },
+  { 
+    name: 'Karim Mostafa', 
+    role: { en: 'E-Commerce Brand Owner', ar: 'مالك علامة تجارية إلكترونية' }, 
+    text: { en: '"Our ROAS was 1.8x before Mohamed. Six weeks later, we\'re at 5.2x with the same budget. The creative testing approach alone was worth every penny."', ar: '"كان عائدنا على الإنفاق 1.8 قبل محمد. بعد ستة أسابيع، وصلنا إلى 5.2 بنفس الميزانية. نهج اختبار الإبداعات وحده كان يستحق كل قرش."' }, 
+    rating: 5, 
+    initials: 'KM',
+    // TODO: Replace this URL with your client's avatar image
+    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80'
+  },
+  { 
+    name: 'Nour Al-Amin', 
+    role: { en: 'Beauty Brand Founder, Dubai', ar: 'مؤسسة علامة تجارية للجمال، دبي' }, 
+    text: { en: '"Professional, data-obsessed, and delivers results. Mohamed is our long-term ads partner and I wouldn\'t trust anyone else with our Meta budget."', ar: '"محترف، مهووس بالبيانات، ويُحقق النتائج. محمد هو شريكنا الإعلاني على المدى البعيد ولن أثق بأحد غيره في ميزانية Meta الخاصة بنا."' }, 
+    rating: 5, 
+    initials: 'NA',
+    // TODO: Replace this URL with your client's avatar image
+    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80'
+  },
 ];
 
 const tools = [
@@ -127,10 +172,7 @@ function renderPortfolio() {
   grid.innerHTML = projects.map((p, i) => `
     <div class="project-card reveal" onclick="openModal(${i})">
       <div class="project-thumb">
-        <div class="project-thumb-inner">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <p>Campaign Screenshot</p>
-        </div>
+        <img src="${p.thumb}" style="width:100%;height:100%;object-fit:cover;" alt="${p.brand}">
         <span class="project-industry">${p.industry[currentLang]}</span>
       </div>
       <div class="project-body">
@@ -151,6 +193,14 @@ function renderPortfolio() {
 function openModal(i) {
   const p = projects[i];
   const L = currentLang;
+  
+  // Render static screenshots instead of upload UI
+  const screenshotsHtml = p.screenshots && p.screenshots.length > 0 
+    ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px;">
+         ${p.screenshots.map(src => `<img src="${src}" style="width:100%;border-radius:10px;border:1px solid #eee;" alt="Screenshot">`).join('')}
+       </div>`
+    : `<p style="color:#999;font-size:14px;margin-top:10px;">${L === 'ar' ? 'لا توجد لقطات شاشة متاحة.' : 'No screenshots available.'}</p>`;
+
   document.getElementById('modal-body').innerHTML = `
     <div class="modal-header-meta">
       <div class="modal-eyebrow">${p.brand}</div>
@@ -167,25 +217,10 @@ function openModal(i) {
     <div class="modal-section"><h4>${L === 'ar' ? 'الاستراتيجية' : 'Strategy'}</h4><p>${p.strategy[L]}</p></div>
     <div class="modal-section">
       <h4>${L === 'ar' ? 'لقطات الشاشة' : 'Campaign Screenshots'}</h4>
-      <div class="screenshot-upload-area" onclick="document.getElementById('ss-upload-${i}').click()">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        <p>${L === 'ar' ? 'انقر لرفع لقطات إعلانات Meta، Shopify، أو شهادات العملاء' : 'Click to upload Meta Ads screenshots, Shopify dashboards, or client testimonials'}</p>
-        <input type="file" id="ss-upload-${i}" accept="image/*" multiple style="display:none" onchange="handleScreenshots(this,${i})">
-      </div>
-      <div id="ss-gallery-${i}" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px;"></div>
+      ${screenshotsHtml}
     </div>`;
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
-}
-
-function handleScreenshots(input, idx) {
-  const gallery = document.getElementById('ss-gallery-' + idx);
-  Array.from(input.files).forEach(f => {
-    const url = URL.createObjectURL(f);
-    const img = document.createElement('img');
-    img.src = url; img.style.cssText = 'width:100%;border-radius:10px;border:1px solid #eee;';
-    gallery.appendChild(img);
-  });
 }
 
 document.getElementById('modal-close').onclick = closeModal;
@@ -241,7 +276,15 @@ document.getElementById('add-testimonial-btn').onclick = function() {
   const role = prompt('Role / Company:');
   const text = prompt('Testimonial text:');
   if (text) {
-    testimonials.push({ name, role: { en: role, ar: role }, text: { en: text, ar: text }, rating: 5, initials: name.slice(0,2).toUpperCase() });
+    testimonials.push({ 
+      name, 
+      role: { en: role, ar: role }, 
+      text: { en: text, ar: text }, 
+      rating: 5, 
+      initials: name.slice(0,2).toUpperCase(),
+      // TODO: Replace this generic image when adding new dynamic testimonials
+      img: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80'
+    });
     renderTestimonials();
   }
 };
@@ -356,6 +399,11 @@ function saveEdits() {
       roas: document.getElementById('new-roas').value || '',
       revenue: document.getElementById('new-revenue').value || '',
       leads: '—',
+      // TODO: Replace this image when adding new programmatic projects
+      thumb: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80',
+      screenshots: [
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80'
+      ]
     });
     renderPortfolio();
     ['new-brand','new-industry','new-objective','new-roas','new-budget','new-revenue'].forEach(id => document.getElementById(id).value = '');
@@ -364,29 +412,6 @@ function saveEdits() {
   showToast(currentLang === 'ar' ? 'تم الحفظ ✓' : 'Changes saved ✓');
   document.getElementById('edit-panel').classList.remove('open');
 }
-
-// Profile photo upload
-document.getElementById('profile-upload').onchange = function() {
-  if (!this.files[0]) return;
-  const url = URL.createObjectURL(this.files[0]);
-  document.getElementById('hero-photo-placeholder').style.display = 'none';
-  const img = document.getElementById('hero-photo-img');
-  img.src = url; img.style.display = 'block';
-};
-document.getElementById('hero-photo-frame').onclick = function() {
-  document.getElementById('profile-upload').click();
-};
-
-// ── CERT UPLOAD ──
-document.getElementById('cert-upload').onchange = function() {
-  if (!this.files[0]) return;
-  const url = URL.createObjectURL(this.files[0]);
-  const grid = document.getElementById('certs-grid');
-  const div = document.createElement('div');
-  div.className = 'cert-card filled';
-  div.innerHTML = `<img src="${url}" alt="Certificate" style="width:100%;height:100%;object-fit:cover;"><div class="cert-overlay"><span>${currentLang === 'ar' ? 'عرض' : 'View'}</span></div>`;
-  grid.insertBefore(div, grid.lastElementChild);
-};
 
 // ── CONTACT FORM ──
 function handleFormSubmit(e) {
