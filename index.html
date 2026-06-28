@@ -9,9 +9,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<body>
 
-<!-- NAVIGATION -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">M<span>.</span>Ahmed</a>
   <ul class="nav-links">
@@ -34,7 +32,6 @@
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu">
   <a href="#about" data-en="About" data-ar="عني">About</a>
   <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
@@ -44,7 +41,6 @@
   <a href="#contact" class="btn-consult" data-en="Book a Call" data-ar="احجز استشارة">Book a Call</a>
 </div>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg-accent"></div>
   <div class="hero-content">
@@ -82,12 +78,7 @@
 
   <div class="hero-visual">
     <div class="photo-frame" id="hero-photo-frame">
-      <div class="photo-placeholder" id="hero-photo-placeholder">
-        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        <p data-en="Upload your photo" data-ar="ارفع صورتك">Upload your photo</p>
-        <p style="font-size:11px;color:#ccc;" data-en="Click to add" data-ar="انقر للإضافة">Click to add</p>
-      </div>
-      <img id="hero-photo-img" style="display:none;width:100%;height:100%;object-fit:cover;" alt="Profile photo">
+      <img id="hero-photo-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Profile photo">
       <div class="photo-badge">
         <div class="badge-dot"></div>
         <div>
@@ -99,7 +90,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
     <div>
@@ -145,13 +135,12 @@
     </div>
     <div>
       <div class="about-photo">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1"><circle cx="12" cy="8" r="5"/><path d="M3 21c0-5 4-9 9-9s9 4 9 9"/></svg>
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" style="width:100%;height:100%;object-fit:cover;" alt="About Me">
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="section-header">
     <span class="section-eyebrow" data-en="What I Do" data-ar="ماذا أفعل">What I Do</span>
@@ -159,11 +148,9 @@
     <p class="section-sub" data-en="End-to-end Meta advertising solutions built for performance, precision, and scalable growth." data-ar="حلول إعلانية شاملة على Meta مبنية على الأداء والدقة والنمو القابل للتوسع.">End-to-end Meta advertising solutions built for performance, precision, and scalable growth.</p>
   </div>
   <div class="services-grid" id="services-grid">
-    <!-- JS renders these -->
-  </div>
+    </div>
 </section>
 
-<!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="section-header reveal">
     <span class="section-eyebrow" data-en="Case Studies" data-ar="دراسات حالة">Case Studies</span>
@@ -171,11 +158,9 @@
     <p class="section-sub" data-en="Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision." data-ar="حملات حقيقية، أرقام حقيقية. كل مشروع شاهد على استراتيجية مبنية على البيانات ومنفذة بدقة.">Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision.</p>
   </div>
   <div class="portfolio-grid" id="portfolio-grid">
-    <!-- JS renders projects -->
-  </div>
+    </div>
 </section>
 
-<!-- PROJECT MODAL -->
 <div class="modal-overlay" id="modal-overlay">
   <div class="modal" id="modal-content">
     <button class="modal-close" id="modal-close">✕</button>
@@ -183,7 +168,6 @@
   </div>
 </div>
 
-<!-- RESULTS DASHBOARD -->
 <section id="results">
   <div class="section-header reveal">
     <span class="section-eyebrow" data-en="Performance Dashboard" data-ar="لوحة الأداء">Performance Dashboard</span>
@@ -197,7 +181,6 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section id="testimonials">
   <div class="section-header reveal">
     <span class="section-eyebrow" data-en="Client Testimonials" data-ar="آراء العملاء">Client Testimonials</span>
@@ -206,43 +189,36 @@
   <div class="testimonials-grid" id="testimonials-grid"></div>
   <div style="text-align:center;margin-top:32px;">
     <button class="add-testimonial-btn" id="add-testimonial-btn" style="max-width:400px;margin:0 auto;">
-      ＋ <span data-en="Add a client testimonial or screenshot" data-ar="أضف شهادة عميل أو لقطة شاشة">Add a client testimonial or screenshot</span>
+      ＋ <span data-en="Add a client testimonial" data-ar="أضف شهادة عميل">Add a client testimonial</span>
     </button>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-header reveal">
     <span class="section-eyebrow" data-en="Credentials" data-ar="المؤهلات">Credentials</span>
     <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
   </div>
   <div class="certs-grid" id="certs-grid">
-    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
-      <span class="cert-placeholder">🏆</span>
-      <span class="cert-label" data-en="Meta Blueprint" data-ar="Meta Blueprint">Meta Blueprint</span>
-      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    <div class="cert-card">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80" alt="Meta Blueprint">
+      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
     </div>
-    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
-      <span class="cert-placeholder">📊</span>
-      <span class="cert-label" data-en="Google Analytics" data-ar="Google Analytics">Google Analytics</span>
-      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    <div class="cert-card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Google Analytics">
+      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
     </div>
-    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
-      <span class="cert-placeholder">📱</span>
-      <span class="cert-label" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</span>
-      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    <div class="cert-card">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="Digital Marketing">
+      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
     </div>
-    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
-      <span class="cert-placeholder">＋</span>
-      <span class="cert-label" data-en="Add Certificate" data-ar="أضف شهادة">Add Certificate</span>
-      <div class="cert-overlay"><span data-en="Upload Image" data-ar="ارفع صورة">Upload Image</span></div>
+    <div class="cert-card">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" alt="Additional Certificate">
+      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
     </div>
   </div>
-  <input type="file" id="cert-upload" accept="image/*" style="display:none">
 </section>
 
-<!-- TOOLS -->
 <section id="tools">
   <div class="section-header reveal">
     <span class="section-eyebrow" data-en="Tech Stack" data-ar="الأدوات">Tech Stack</span>
@@ -251,7 +227,6 @@
   <div class="tools-grid" id="tools-grid"></div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrapper">
     <div class="contact-info">
@@ -325,7 +300,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-brand">
     <a href="#hero" class="nav-logo">M<span>.</span>Ahmed</a>
@@ -334,10 +308,8 @@
   <div class="footer-copy" data-en="© 2025 Mohamed Ahmed. All rights reserved." data-ar="© 2025 محمد أحمد. جميع الحقوق محفوظة.">© 2025 Mohamed Ahmed. All rights reserved.</div>
 </footer>
 
-<!-- EDIT CMS BUTTON -->
 <button class="edit-overlay-btn" id="edit-btn" title="Edit Content">✏</button>
 
-<!-- EDIT PANEL -->
 <div class="edit-panel" id="edit-panel">
   <button class="edit-panel-close" id="edit-panel-close">✕</button>
   <h2>Edit Content</h2>
@@ -383,12 +355,6 @@
   </div>
 
   <div class="edit-section">
-    <h3>Profile Photo</h3>
-    <button class="edit-upload-btn" onclick="document.getElementById('profile-upload').click()">📷 Upload Your Photo</button>
-    <input type="file" id="profile-upload" accept="image/*" style="display:none">
-  </div>
-
-  <div class="edit-section">
     <h3>Add Portfolio Project</h3>
     <div class="edit-field">
       <label>Brand Name</label>
@@ -419,15 +385,7 @@
   <button class="edit-save" onclick="saveEdits()">Save All Changes</button>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast">Changes saved ✓</div>
-
-<!-- HIDDEN INPUTS -->
-<input type="file" id="profile-upload-hidden" accept="image/*" style="display:none">
-
-
-<!-- HIDDEN INPUTS -->
-<input type="file" id="profile-upload-hidden" accept="image/*" style="display:none">
 
 <script src="script.js"></script>
 </body>
