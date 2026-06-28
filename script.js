@@ -194,7 +194,6 @@ function openModal(i) {
   const p = projects[i];
   const L = currentLang;
   
-  // Render static screenshots instead of upload UI
   const screenshotsHtml = p.screenshots && p.screenshots.length > 0 
     ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:16px;">
          ${p.screenshots.map(src => `<img src="${src}" style="width:100%;border-radius:10px;border:1px solid #eee;" alt="Screenshot">`).join('')}
@@ -269,26 +268,6 @@ function renderTestimonials() {
   observeReveal();
 }
 
-// ── ADD TESTIMONIAL ──
-document.getElementById('add-testimonial-btn').onclick = function() {
-  const name = prompt('Client name:');
-  if (!name) return;
-  const role = prompt('Role / Company:');
-  const text = prompt('Testimonial text:');
-  if (text) {
-    testimonials.push({ 
-      name, 
-      role: { en: role, ar: role }, 
-      text: { en: text, ar: text }, 
-      rating: 5, 
-      initials: name.slice(0,2).toUpperCase(),
-      // TODO: Replace this generic image when adding new dynamic testimonials
-      img: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80'
-    });
-    renderTestimonials();
-  }
-};
-
 // ── TOOLS ──
 function renderTools() {
   document.getElementById('tools-grid').innerHTML = tools.map(t => `
@@ -319,14 +298,17 @@ function animateCounter(el, target, suffix, prefix='') {
 let countersRan = false;
 function runCounters() {
   if (countersRan) return; countersRan = true;
-  const spend = document.getElementById('edit-spend')?.value || '$2.5M';
-  const roas = document.getElementById('edit-roas')?.value || '4.8';
-  const clients = document.getElementById('edit-clients')?.value || '47';
-  const campaigns = document.getElementById('edit-campaigns')?.value || '120';
+  
+  // Hardcoded values to replace the removed Edit CMS panel
+  const spend = '$2.5M';
+  const roas = '4.8';
+  const clients = '47';
+  const campaigns = '120';
+  
   document.getElementById('stat-spend').textContent = spend;
-  animateCounter(document.getElementById('stat-roas'), roas.replace('x',''), 'x');
-  animateCounter(document.getElementById('stat-clients'), clients.replace('+',''), '+');
-  animateCounter(document.getElementById('stat-campaigns'), campaigns.replace('+',''), '+');
+  animateCounter(document.getElementById('stat-roas'), roas, 'x');
+  animateCounter(document.getElementById('stat-clients'), clients, '+');
+  animateCounter(document.getElementById('stat-campaigns'), campaigns, '+');
 }
 
 // ── SCROLL REVEAL ──
@@ -369,49 +351,6 @@ document.getElementById('hamburger').onclick = function() {
 document.querySelectorAll('.mobile-menu a').forEach(a => {
   a.onclick = () => document.getElementById('mobile-menu').classList.remove('open');
 });
-
-// ── EDIT PANEL ──
-document.getElementById('edit-btn').onclick = () => document.getElementById('edit-panel').classList.add('open');
-document.getElementById('edit-panel-close').onclick = () => document.getElementById('edit-panel').classList.remove('open');
-
-function saveEdits() {
-  const spend = document.getElementById('edit-spend').value;
-  const roas = document.getElementById('edit-roas').value;
-  const clients = document.getElementById('edit-clients').value;
-  const campaigns = document.getElementById('edit-campaigns').value;
-  if (spend) document.getElementById('stat-spend').textContent = spend;
-  if (roas) document.getElementById('stat-roas').textContent = roas;
-  if (clients) document.getElementById('stat-clients').textContent = clients;
-  if (campaigns) document.getElementById('stat-campaigns').textContent = campaigns;
-
-  const email = document.getElementById('edit-email').value;
-  if (email) document.getElementById('contact-email').textContent = email;
-
-  const brand = document.getElementById('new-brand').value;
-  if (brand) {
-    projects.push({
-      brand,
-      name: { en: brand + ' Campaign', ar: 'حملة ' + brand },
-      industry: { en: document.getElementById('new-industry').value || 'General', ar: document.getElementById('new-industry').value || 'عام' },
-      objective: { en: document.getElementById('new-objective').value || '', ar: document.getElementById('new-objective').value || '' },
-      strategy: { en: 'Custom strategy tailored for this client.', ar: 'استراتيجية مخصصة لهذا العميل.' },
-      budget: document.getElementById('new-budget').value || '',
-      roas: document.getElementById('new-roas').value || '',
-      revenue: document.getElementById('new-revenue').value || '',
-      leads: '—',
-      // TODO: Replace this image when adding new programmatic projects
-      thumb: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80',
-      screenshots: [
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80'
-      ]
-    });
-    renderPortfolio();
-    ['new-brand','new-industry','new-objective','new-roas','new-budget','new-revenue'].forEach(id => document.getElementById(id).value = '');
-  }
-
-  showToast(currentLang === 'ar' ? 'تم الحفظ ✓' : 'Changes saved ✓');
-  document.getElementById('edit-panel').classList.remove('open');
-}
 
 // ── CONTACT FORM ──
 function handleFormSubmit(e) {
