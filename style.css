@@ -214,14 +214,6 @@ nav.scrolled { box-shadow: 0 2px 40px rgba(0,0,0,0.08); }
   position: relative;
   border: 1px solid var(--gray-200);
 }
-.photo-placeholder {
-  width: 100%; height: 100%;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 12px;
-  background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
-}
-.photo-placeholder svg { opacity: 0.3; }
-.photo-placeholder p { font-size: 13px; color: var(--gray-400); font-weight: 500; }
 
 .photo-badge {
   position: absolute; bottom: 20px; left: 20px; right: 20px;
@@ -337,9 +329,6 @@ section { padding: 100px 5%; }
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
 }
-.project-thumb-inner { text-align: center; }
-.project-thumb-inner svg { opacity: 0.25; margin-bottom: 8px; }
-.project-thumb-inner p { font-size: 12px; color: var(--gray-400); font-weight: 500; }
 
 .project-industry {
   position: absolute; top: 16px; right: 16px;
@@ -400,14 +389,6 @@ section { padding: 100px 5%; }
 .modal-section { margin-bottom: 28px; }
 .modal-section h4 { font-size: 13px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
 .modal-section p { font-size: 15px; color: var(--gray-600); line-height: 1.7; }
-
-.screenshot-upload-area {
-  border: 2px dashed var(--gray-200); border-radius: 16px;
-  padding: 40px; text-align: center; cursor: pointer;
-  transition: border-color var(--transition);
-}
-.screenshot-upload-area:hover { border-color: var(--gold); }
-.screenshot-upload-area p { font-size: 14px; color: var(--gray-400); margin-top: 10px; }
 
 /* ── RESULTS DASHBOARD ── */
 #results { background: var(--black); }
@@ -482,13 +463,12 @@ section { padding: 100px 5%; }
 .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
 .cert-card {
   aspect-ratio: 16/9; background: var(--gray-50);
-  border: 2px dashed var(--gray-200); border-radius: 16px;
+  border: 2px solid var(--gray-200); border-radius: 16px;
   display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 10px;
+  align-items: center; justify-content: center;
   cursor: pointer; transition: all var(--transition);
   position: relative; overflow: hidden;
 }
-.cert-card.filled { border-style: solid; border-color: var(--gray-200); }
 .cert-card img { width: 100%; height: 100%; object-fit: cover; }
 .cert-card:hover { border-color: var(--gold); }
 .cert-overlay {
@@ -498,8 +478,6 @@ section { padding: 100px 5%; }
 }
 .cert-card:hover .cert-overlay { opacity: 1; }
 .cert-overlay span { font-size: 13px; font-weight: 700; color: var(--black); }
-.cert-placeholder { font-size: 28px; }
-.cert-label { font-size: 12px; color: var(--gray-400); font-weight: 600; }
 
 /* ── TOOLS ── */
 #tools { background: var(--gray-50); }
@@ -614,13 +592,6 @@ footer {
   cursor: pointer; font-family: 'Inter', sans-serif; transition: all var(--transition);
 }
 .edit-save:hover { background: var(--gold); color: var(--black); }
-.edit-upload-btn {
-  width: 100%; padding: 12px; border: 2px dashed var(--gray-200);
-  border-radius: 8px; background: none; cursor: pointer;
-  font-size: 13px; color: var(--gray-400); font-family: 'Inter', sans-serif;
-  transition: all var(--transition);
-}
-.edit-upload-btn:hover { border-color: var(--gold); color: var(--gold); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
