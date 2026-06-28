@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed | Elite Meta Media Buyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">M<span>.</span>Ahmed</a>
+  <ul class="nav-links">
+    <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+    <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+    <li><a href="#portfolio" data-en="Work" data-ar="أعمالي">Work</a></li>
+    <li><a href="#results" data-en="Results" data-ar="النتائج">Results</a></li>
+    <li><a href="#testimonials" data-en="Testimonials" data-ar="آراء العملاء">Testimonials</a></li>
+    <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-en">EN</button>
+      <button class="lang-btn" id="btn-ar">AR</button>
+    </div>
+    <a href="#contact" class="btn-consult desktop" data-en="Book a Call" data-ar="احجز استشارة">Book a Call</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" data-en="About" data-ar="عني">About</a>
+  <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+  <a href="#portfolio" data-en="Work" data-ar="أعمالي">Work</a>
+  <a href="#results" data-en="Results" data-ar="النتائج">Results</a>
+  <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  <a href="#contact" class="btn-consult" data-en="Book a Call" data-ar="احجز استشارة">Book a Call</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-accent"></div>
+  <div class="hero-content">
+    <div class="hero-tag" data-en="✦ Available for New Clients" data-ar="✦ متاح لعملاء جدد">✦ Available for New Clients</div>
+    <h1 class="hero-title">
+      <span data-en="Performance Media Buyer" data-ar="مشتري وسائط للأداء">Performance Media Buyer</span><br>
+      <em data-en="Scaling Brands" data-ar="يُضاعف نمو الأعمال">Scaling Brands</em>
+      <span data-en=" Through" data-ar=" عبر"> Through</span><br>
+      <span data-en="Data-Driven Ads" data-ar="إعلانات مبنية على البيانات">Data-Driven Ads</span>
+    </h1>
+    <p class="hero-sub" data-en="Meta Ads specialist with deep expertise in Facebook & Instagram advertising. I build and scale high-ROI campaigns for clinics, e-commerce brands, and service businesses." data-ar="متخصص في إعلانات Meta مع خبرة عميقة في إعلانات فيسبوك وإنستغرام. أبني وأُوسّع حملات ذات عائد استثمار مرتفع للعيادات والمتاجر الإلكترونية والأعمال الخدمية.">Meta Ads specialist with deep expertise in Facebook & Instagram advertising. I build and scale high-ROI campaigns for clinics, e-commerce brands, and service businesses.</p>
+    <div class="hero-ctas">
+      <a href="#portfolio" class="btn-primary" data-en="View My Work" data-ar="اطلع على أعمالي">View My Work</a>
+      <a href="#contact" class="btn-secondary" data-en="Book a Consultation" data-ar="احجز استشارة">Book a Consultation</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number" id="stat-spend">$0</div>
+        <div class="stat-label" data-en="Total Ad Spend Managed" data-ar="إجمالي الإنفاق الإعلاني المُدار">Total Ad Spend Managed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-roas">0x</div>
+        <div class="stat-label" data-en="Average ROAS" data-ar="متوسط العائد على الإنفاق">Average ROAS</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-clients">0+</div>
+        <div class="stat-label" data-en="Clients Served" data-ar="عملاء تمت خدمتهم">Clients Served</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-campaigns">0+</div>
+        <div class="stat-label" data-en="Campaigns Launched" data-ar="حملات تم إطلاقها">Campaigns Launched</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="photo-frame" id="hero-photo-frame">
+      <div class="photo-placeholder" id="hero-photo-placeholder">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <p data-en="Upload your photo" data-ar="ارفع صورتك">Upload your photo</p>
+        <p style="font-size:11px;color:#ccc;" data-en="Click to add" data-ar="انقر للإضافة">Click to add</p>
+      </div>
+      <img id="hero-photo-img" style="display:none;width:100%;height:100%;object-fit:cover;" alt="Profile photo">
+      <div class="photo-badge">
+        <div class="badge-dot"></div>
+        <div>
+          <div class="badge-text" data-en="Meta Ads Specialist" data-ar="متخصص Meta Ads">Meta Ads Specialist</div>
+          <div class="badge-sub" data-en="Healthcare & E-Commerce" data-ar="الرعاية الصحية والتجارة الإلكترونية">Healthcare & E-Commerce</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <span class="section-eyebrow" data-en="About Me" data-ar="عني">About Me</span>
+      <h2 class="section-title" data-en="The Mind Behind the Metrics" data-ar="العقل وراء الأرقام">The Mind Behind the Metrics</h2>
+      <p style="font-size:16px;color:#666;line-height:1.8;margin-bottom:24px;" data-en="I'm a freelance Meta Media Buyer with a unique background — a final-year nursing student who discovered a passion for data-driven digital marketing. That combination gives me an edge in the healthcare niche that generalist media buyers can't match." data-ar="أنا مشتري وسائط إعلانية مستقل متخصص في Meta بخلفية فريدة — طالب تمريض في السنة الأخيرة اكتشف شغفه بالتسويق الرقمي القائم على البيانات. هذا الجمع يمنحني ميزة في قطاع الرعاية الصحية لا يستطيع توفيرها مشترو الوسائط الإعلانية العموميون.">I'm a freelance Meta Media Buyer with a unique background — a final-year nursing student who discovered a passion for data-driven digital marketing. That combination gives me an edge in the healthcare niche that generalist media buyers can't match.</p>
+
+      <div class="philosophy">
+        <div class="philosophy-label" data-en="My Philosophy" data-ar="فلسفتي">My Philosophy</div>
+        <p data-en="Every dollar you spend on ads is an investment that deserves a return. I approach every campaign like a scientist — test, measure, analyze, optimize, and scale what works. No guesswork, no vanity metrics, only real results." data-ar="كل دولار تنفقه على الإعلانات هو استثمار يستحق عائداً. أتعامل مع كل حملة كعالم — أختبر وأقيس وأحلل وأُحسّن وأُوسّع ما ينجح. لا تخمينات، لا مقاييس زائفة، نتائج حقيقية فقط.">Every dollar you spend on ads is an investment that deserves a return. I approach every campaign like a scientist — test, measure, analyze, optimize, and scale what works. No guesswork, no vanity metrics, only real results.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2022</span>
+          <div class="timeline-content">
+            <h4 data-en="Started Media Buying" data-ar="بداية شراء الوسائط">Started Media Buying</h4>
+            <p data-en="Launched first Facebook Ads campaigns for local healthcare clients" data-ar="أطلقت أولى حملات فيسبوك لعملاء محليين في الرعاية الصحية">Launched first Facebook Ads campaigns for local healthcare clients</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2023</span>
+          <div class="timeline-content">
+            <h4 data-en="Scaled to Multiple Niches" data-ar="التوسع في قطاعات متعددة">Scaled to Multiple Niches</h4>
+            <p data-en="Expanded to e-commerce and service-based businesses across Egypt and Gulf" data-ar="توسعت نحو التجارة الإلكترونية والأعمال الخدمية في مصر والخليج">Expanded to e-commerce and service-based businesses across Egypt and Gulf</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2024</span>
+          <div class="timeline-content">
+            <h4 data-en="Healthcare Niche Expert" data-ar="خبير في نيش الرعاية الصحية">Healthcare Niche Expert</h4>
+            <p data-en="Became the go-to specialist for clinics, doctors, and healthcare brands" data-ar="أصبحت المتخصص المرجعي للعيادات والأطباء والعلامات التجارية للرعاية الصحية">Became the go-to specialist for clinics, doctors, and healthcare brands</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2025</span>
+          <div class="timeline-content">
+            <h4 data-en="Building & Scaling" data-ar="البناء والتوسع">Building & Scaling</h4>
+            <p data-en="Growing a portfolio of high-performing campaigns across diverse industries" data-ar="توسيع محفظة من الحملات عالية الأداء عبر صناعات متنوعة">Growing a portfolio of high-performing campaigns across diverse industries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="about-photo">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1"><circle cx="12" cy="8" r="5"/><path d="M3 21c0-5 4-9 9-9s9 4 9 9"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header">
+    <span class="section-eyebrow" data-en="What I Do" data-ar="ماذا أفعل">What I Do</span>
+    <h2 class="section-title" data-en="Premium Advertising Services" data-ar="خدمات إعلانية متميزة">Premium Advertising Services</h2>
+    <p class="section-sub" data-en="End-to-end Meta advertising solutions built for performance, precision, and scalable growth." data-ar="حلول إعلانية شاملة على Meta مبنية على الأداء والدقة والنمو القابل للتوسع.">End-to-end Meta advertising solutions built for performance, precision, and scalable growth.</p>
+  </div>
+  <div class="services-grid" id="services-grid">
+    <!-- JS renders these -->
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" data-en="Case Studies" data-ar="دراسات حالة">Case Studies</span>
+    <h2 class="section-title" data-en="Results That Speak" data-ar="نتائج تتحدث">Results That Speak</h2>
+    <p class="section-sub" data-en="Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision." data-ar="حملات حقيقية، أرقام حقيقية. كل مشروع شاهد على استراتيجية مبنية على البيانات ومنفذة بدقة.">Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision.</p>
+  </div>
+  <div class="portfolio-grid" id="portfolio-grid">
+    <!-- JS renders projects -->
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal-content">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- RESULTS DASHBOARD -->
+<section id="results">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" data-en="Performance Dashboard" data-ar="لوحة الأداء">Performance Dashboard</span>
+    <h2 class="section-title" data-en="The Numbers Tell the Story" data-ar="الأرقام تروي القصة">The Numbers Tell the Story</h2>
+    <p class="section-sub" data-en="Live KPIs from across my managed campaigns — updated regularly to reflect current performance benchmarks." data-ar="مؤشرات أداء رئيسية من حملاتي المُدارة — يتم تحديثها بانتظام لتعكس معايير الأداء الحالية.">Live KPIs from across my managed campaigns — updated regularly to reflect current performance benchmarks.</p>
+  </div>
+  <div class="kpi-grid" id="kpi-grid"></div>
+  <div class="chart-container reveal" style="margin-top:32px;">
+    <div class="chart-title" data-en="Monthly Revenue Generated for Clients (USD)" data-ar="الإيرادات الشهرية المحققة للعملاء (دولار)">Monthly Revenue Generated for Clients (USD)</div>
+    <div class="bar-chart" id="bar-chart"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" data-en="Client Testimonials" data-ar="آراء العملاء">Client Testimonials</span>
+    <h2 class="section-title" data-en="What Clients Say" data-ar="ماذا يقول العملاء">What Clients Say</h2>
+  </div>
+  <div class="testimonials-grid" id="testimonials-grid"></div>
+  <div style="text-align:center;margin-top:32px;">
+    <button class="add-testimonial-btn" id="add-testimonial-btn" style="max-width:400px;margin:0 auto;">
+      ＋ <span data-en="Add a client testimonial or screenshot" data-ar="أضف شهادة عميل أو لقطة شاشة">Add a client testimonial or screenshot</span>
+    </button>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" data-en="Credentials" data-ar="المؤهلات">Credentials</span>
+    <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+  </div>
+  <div class="certs-grid" id="certs-grid">
+    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
+      <span class="cert-placeholder">🏆</span>
+      <span class="cert-label" data-en="Meta Blueprint" data-ar="Meta Blueprint">Meta Blueprint</span>
+      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    </div>
+    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
+      <span class="cert-placeholder">📊</span>
+      <span class="cert-label" data-en="Google Analytics" data-ar="Google Analytics">Google Analytics</span>
+      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    </div>
+    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
+      <span class="cert-placeholder">📱</span>
+      <span class="cert-label" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</span>
+      <div class="cert-overlay"><span data-en="Upload Certificate" data-ar="ارفع الشهادة">Upload Certificate</span></div>
+    </div>
+    <div class="cert-card" onclick="document.getElementById('cert-upload').click()">
+      <span class="cert-placeholder">＋</span>
+      <span class="cert-label" data-en="Add Certificate" data-ar="أضف شهادة">Add Certificate</span>
+      <div class="cert-overlay"><span data-en="Upload Image" data-ar="ارفع صورة">Upload Image</span></div>
+    </div>
+  </div>
+  <input type="file" id="cert-upload" accept="image/*" style="display:none">
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" data-en="Tech Stack" data-ar="الأدوات">Tech Stack</span>
+    <h2 class="section-title" data-en="Tools & Skills" data-ar="الأدوات والمهارات">Tools & Skills</h2>
+  </div>
+  <div class="tools-grid" id="tools-grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <span class="section-eyebrow" data-en="Let's Work Together" data-ar="لنعمل معاً">Let's Work Together</span>
+      <h2 class="section-title" data-en="Ready to Scale Your Brand?" data-ar="مستعد لتوسيع علامتك؟">Ready to Scale Your Brand?</h2>
+      <p data-en="Whether you're a clinic looking to attract more patients, or an e-commerce brand ready to grow — let's build something exceptional together." data-ar="سواء كنت عيادة تبحث عن جذب المزيد من المرضى، أو علامة تجارية إلكترونية مستعدة للنمو — لنبني شيئاً استثنائياً معاً.">Whether you're a clinic looking to attract more patients, or an e-commerce brand ready to grow — let's build something exceptional together.</p>
+      <a href="mailto:your@email.com" class="contact-link">
+        <div class="contact-link-icon">✉</div>
+        <div class="contact-link-text">
+          <strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong>
+          <span id="contact-email">your@email.com</span>
+        </div>
+      </a>
+      <a href="https://wa.me/201000000000" class="contact-link" target="_blank">
+        <div class="contact-link-icon">📱</div>
+        <div class="contact-link-text">
+          <strong>WhatsApp</strong>
+          <span id="contact-whatsapp" data-en="Message me directly" data-ar="راسلني مباشرة">Message me directly</span>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/" class="contact-link" target="_blank">
+        <div class="contact-link-icon">💼</div>
+        <div class="contact-link-text">
+          <strong>LinkedIn</strong>
+          <span data-en="View my professional profile" data-ar="اطلع على ملفي المهني">View my professional profile</span>
+        </div>
+      </a>
+      <a href="https://instagram.com/" class="contact-link" target="_blank">
+        <div class="contact-link-icon">📸</div>
+        <div class="contact-link-text">
+          <strong>Instagram</strong>
+          <span data-en="Follow for marketing insights" data-ar="تابع للحصول على رؤى تسويقية">Follow for marketing insights</span>
+        </div>
+      </a>
+    </div>
+
+    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <label data-en="Your Name" data-ar="اسمك">Your Name</label>
+        <input type="text" required placeholder="Ahmed Al-Rashid" data-en-placeholder="Ahmed Al-Rashid" data-ar-placeholder="أحمد الراشد">
+      </div>
+      <div class="form-group">
+        <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+        <input type="email" required placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label data-en="Business Type" data-ar="نوع العمل">Business Type</label>
+        <select>
+          <option value="" data-en="Select your niche..." data-ar="اختر مجالك...">Select your niche...</option>
+          <option data-en="Healthcare / Clinic" data-ar="رعاية صحية / عيادة">Healthcare / Clinic</option>
+          <option data-en="E-Commerce / Dropshipping" data-ar="تجارة إلكترونية">E-Commerce / Dropshipping</option>
+          <option data-en="Service Business" data-ar="أعمال خدمية">Service Business</option>
+          <option data-en="Other" data-ar="أخرى">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-en="Monthly Ad Budget" data-ar="الميزانية الإعلانية الشهرية">Monthly Ad Budget</label>
+        <select>
+          <option data-en="Less than $500" data-ar="أقل من $500">Less than $500</option>
+          <option data-en="$500 – $2,000" data-ar="$500 – $2,000">$500 – $2,000</option>
+          <option data-en="$2,000 – $5,000" data-ar="$2,000 – $5,000">$2,000 – $5,000</option>
+          <option data-en="$5,000+" data-ar="$5,000+">$5,000+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-en="Message" data-ar="الرسالة">Message</label>
+        <textarea placeholder="Tell me about your business and goals..." data-en-placeholder="Tell me about your business and goals..." data-ar-placeholder="أخبرني عن عملك وأهدافك..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" data-en="Send Message →" data-ar="إرسال الرسالة ←">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <a href="#hero" class="nav-logo">M<span>.</span>Ahmed</a>
+    <p data-en="Elite Meta Media Buyer · Healthcare & E-Commerce Specialist" data-ar="مشتري وسائط إعلانية من Meta · متخصص في الرعاية الصحية والتجارة الإلكترونية">Elite Meta Media Buyer · Healthcare & E-Commerce Specialist</p>
+  </div>
+  <div class="footer-copy" data-en="© 2025 Mohamed Ahmed. All rights reserved." data-ar="© 2025 محمد أحمد. جميع الحقوق محفوظة.">© 2025 Mohamed Ahmed. All rights reserved.</div>
+</footer>
+
+<!-- EDIT CMS BUTTON -->
+<button class="edit-overlay-btn" id="edit-btn" title="Edit Content">✏</button>
+
+<!-- EDIT PANEL -->
+<div class="edit-panel" id="edit-panel">
+  <button class="edit-panel-close" id="edit-panel-close">✕</button>
+  <h2>Edit Content</h2>
+
+  <div class="edit-section">
+    <h3>Hero Stats</h3>
+    <div class="edit-field">
+      <label>Total Ad Spend (e.g. $2.5M)</label>
+      <input type="text" id="edit-spend" placeholder="$2.5M">
+    </div>
+    <div class="edit-field">
+      <label>Average ROAS (e.g. 4.8x)</label>
+      <input type="text" id="edit-roas" placeholder="4.8x">
+    </div>
+    <div class="edit-field">
+      <label>Clients Served</label>
+      <input type="text" id="edit-clients" placeholder="47+">
+    </div>
+    <div class="edit-field">
+      <label>Campaigns Launched</label>
+      <input type="text" id="edit-campaigns" placeholder="120+">
+    </div>
+  </div>
+
+  <div class="edit-section">
+    <h3>Contact Info</h3>
+    <div class="edit-field">
+      <label>Your Email</label>
+      <input type="email" id="edit-email" placeholder="your@email.com">
+    </div>
+    <div class="edit-field">
+      <label>WhatsApp Number</label>
+      <input type="text" id="edit-whatsapp" placeholder="+20 100 000 0000">
+    </div>
+    <div class="edit-field">
+      <label>LinkedIn URL</label>
+      <input type="text" id="edit-linkedin" placeholder="linkedin.com/in/yourname">
+    </div>
+    <div class="edit-field">
+      <label>Instagram Handle</label>
+      <input type="text" id="edit-instagram" placeholder="@yourhandle">
+    </div>
+  </div>
+
+  <div class="edit-section">
+    <h3>Profile Photo</h3>
+    <button class="edit-upload-btn" onclick="document.getElementById('profile-upload').click()">📷 Upload Your Photo</button>
+    <input type="file" id="profile-upload" accept="image/*" style="display:none">
+  </div>
+
+  <div class="edit-section">
+    <h3>Add Portfolio Project</h3>
+    <div class="edit-field">
+      <label>Brand Name</label>
+      <input type="text" id="new-brand" placeholder="Dr. Sarah's Clinic">
+    </div>
+    <div class="edit-field">
+      <label>Industry</label>
+      <input type="text" id="new-industry" placeholder="Healthcare">
+    </div>
+    <div class="edit-field">
+      <label>Objective</label>
+      <input type="text" id="new-objective" placeholder="Patient lead generation">
+    </div>
+    <div class="edit-field">
+      <label>ROAS</label>
+      <input type="text" id="new-roas" placeholder="5.2x">
+    </div>
+    <div class="edit-field">
+      <label>Budget</label>
+      <input type="text" id="new-budget" placeholder="$3,000/mo">
+    </div>
+    <div class="edit-field">
+      <label>Revenue Generated</label>
+      <input type="text" id="new-revenue" placeholder="$18,400">
+    </div>
+  </div>
+
+  <button class="edit-save" onclick="saveEdits()">Save All Changes</button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">Changes saved ✓</div>
+
+<!-- HIDDEN INPUTS -->
+<input type="file" id="profile-upload-hidden" accept="image/*" style="display:none">
+
+
+<!-- HIDDEN INPUTS -->
+<input type="file" id="profile-upload-hidden" accept="image/*" style="display:none">
+
+<script src="script.js"></script>
+</body>
+</html>
