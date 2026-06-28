@@ -356,7 +356,36 @@ document.querySelectorAll('.mobile-menu a').forEach(a => {
 // ── CONTACT FORM ──
 function handleFormSubmit(e) {
   e.preventDefault();
-  showToast(currentLang === 'ar' ? 'تم إرسال رسالتك! سأتواصل معك قريباً.' : 'Message sent! I\'ll be in touch soon.');
+  const form = e.target;
+  const formData = new FormData(form);
+  const submitBtn = form.querySelector('.form-submit');
+  
+  // تغيير نص الزر أثناء الإرسال
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
+  submitBtn.style.opacity = '0.7';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(response => {
+    if (response.ok) {
+      showToast(currentLang === 'ar' ? 'تم إرسال رسالتك! سأتواصل معك قريباً.' : 'Message sent! I\'ll be in touch soon.');
+      form.reset();
+    } else {
+      showToast(currentLang === 'ar' ? 'حدث خطأ. يرجى المحاولة لاحقاً.' : 'Error sending message. Please try again.');
+    }
+  })
+  .catch(error => {
+    showToast(currentLang === 'ar' ? 'حدث خطأ. يرجى المحاولة لاحقاً.' : 'Error sending message. Please try again.');
+  })
+  .finally(() => {
+    // إعادة الزر لشكله الطبيعي
+    submitBtn.textContent = originalText;
+    submitBtn.style.opacity = '1';
+  });
 }
 
 // ── TOAST ──
