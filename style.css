@@ -449,15 +449,6 @@ section { padding: 100px 5%; }
 .author-name { font-size: 15px; font-weight: 700; color: var(--black); }
 .author-role { font-size: 12px; color: var(--gray-400); margin-top: 2px; }
 
-.add-testimonial-btn {
-  display: flex; align-items: center; gap: 10px; margin-top: 24px;
-  padding: 16px 24px; border: 2px dashed var(--gray-200);
-  border-radius: 16px; background: none; cursor: pointer;
-  width: 100%; font-family: 'Inter', sans-serif;
-  font-size: 14px; color: var(--gray-400); transition: all var(--transition);
-}
-.add-testimonial-btn:hover { border-color: var(--gold); color: var(--gold); }
-
 /* ── CERTIFICATIONS ── */
 #certifications { background: var(--white); }
 .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
@@ -550,48 +541,6 @@ footer {
 /* ── SCROLL REVEAL ── */
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-
-/* ── EDIT PANEL (CMS) ── */
-.edit-overlay-btn {
-  position: fixed; bottom: 28px; right: 28px; z-index: 900;
-  width: 56px; height: 56px; border-radius: 50%;
-  background: var(--gold); border: none; cursor: pointer;
-  box-shadow: 0 8px 30px rgba(212,175,55,0.4);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 22px; transition: all var(--transition);
-}
-.edit-overlay-btn:hover { transform: scale(1.1); }
-
-.edit-panel {
-  position: fixed; right: -400px; top: 0; bottom: 0; width: 380px;
-  background: var(--white); z-index: 1100; overflow-y: auto;
-  box-shadow: -10px 0 60px rgba(0,0,0,0.15);
-  transition: right var(--transition); padding: 32px 28px;
-}
-.edit-panel.open { right: 0; }
-.edit-panel h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 24px; }
-.edit-panel-close {
-  position: absolute; top: 24px; right: 24px;
-  background: var(--gray-100); border: none; border-radius: 50%;
-  width: 34px; height: 34px; cursor: pointer; font-size: 16px;
-  display: flex; align-items: center; justify-content: center;
-}
-.edit-section { margin-bottom: 32px; }
-.edit-section h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 14px; }
-.edit-field { margin-bottom: 14px; }
-.edit-field label { display: block; font-size: 12px; font-weight: 600; color: var(--gray-600); margin-bottom: 6px; }
-.edit-field input, .edit-field textarea {
-  width: 100%; padding: 10px 14px; border: 1.5px solid var(--gray-200);
-  border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 14px;
-  outline: none; transition: border-color var(--transition); color: var(--black);
-}
-.edit-field input:focus, .edit-field textarea:focus { border-color: var(--gold); }
-.edit-save {
-  width: 100%; padding: 13px; background: var(--black); color: var(--white);
-  border: none; border-radius: 10px; font-size: 14px; font-weight: 600;
-  cursor: pointer; font-family: 'Inter', sans-serif; transition: all var(--transition);
-}
-.edit-save:hover { background: var(--gold); color: var(--black); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
