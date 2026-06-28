@@ -278,37 +278,41 @@
       </a>
     </div>
 
-    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+    <form class="contact-form" action="https://formsubmit.co/YOUR_EMAIL@GMAIL.COM" onsubmit="handleFormSubmit(event)">
+      <!-- إعدادات مخفية لخدمة إرسال الإيميل -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Lead from Portfolio!">
+      
       <div class="form-group">
         <label data-en="Your Name" data-ar="اسمك">Your Name</label>
-        <input type="text" required placeholder="Ahmed Al-Rashid" data-en-placeholder="Ahmed Al-Rashid" data-ar-placeholder="أحمد الراشد">
+        <input type="text" name="Name" required placeholder="Ahmed Al-Rashid" data-en-placeholder="Ahmed Al-Rashid" data-ar-placeholder="أحمد الراشد">
       </div>
       <div class="form-group">
         <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
-        <input type="email" required placeholder="your@email.com">
+        <input type="email" name="Email" required placeholder="your@email.com">
       </div>
       <div class="form-group">
         <label data-en="Business Type" data-ar="نوع العمل">Business Type</label>
-        <select>
+        <select name="Business Type" required>
           <option value="" data-en="Select your niche..." data-ar="اختر مجالك...">Select your niche...</option>
-          <option data-en="Healthcare / Clinic" data-ar="رعاية صحية / عيادة">Healthcare / Clinic</option>
-          <option data-en="E-Commerce / Dropshipping" data-ar="تجارة إلكترونية">E-Commerce / Dropshipping</option>
-          <option data-en="Service Business" data-ar="أعمال خدمية">Service Business</option>
-          <option data-en="Other" data-ar="أخرى">Other</option>
+          <option value="Healthcare" data-en="Healthcare / Clinic" data-ar="رعاية صحية / عيادة">Healthcare / Clinic</option>
+          <option value="E-Commerce" data-en="E-Commerce / Dropshipping" data-ar="تجارة إلكترونية">E-Commerce / Dropshipping</option>
+          <option value="Service" data-en="Service Business" data-ar="أعمال خدمية">Service Business</option>
+          <option value="Other" data-en="Other" data-ar="أخرى">Other</option>
         </select>
       </div>
       <div class="form-group">
         <label data-en="Monthly Ad Budget" data-ar="الميزانية الإعلانية الشهرية">Monthly Ad Budget</label>
-        <select>
-          <option data-en="Less than $500" data-ar="أقل من $500">Less than $500</option>
-          <option data-en="$500 – $2,000" data-ar="$500 – $2,000">$500 – $2,000</option>
-          <option data-en="$2,000 – $5,000" data-ar="$2,000 – $5,000">$2,000 – $5,000</option>
-          <option data-en="$5,000+" data-ar="$5,000+">$5,000+</option>
+        <select name="Budget" required>
+          <option value="< $500" data-en="Less than $500" data-ar="أقل من $500">Less than $500</option>
+          <option value="$500 - $2,000" data-en="$500 – $2,000" data-ar="$500 – $2,000">$500 – $2,000</option>
+          <option value="$2,000 - $5,000" data-en="$2,000 – $5,000" data-ar="$2,000 – $5,000">$2,000 – $5,000</option>
+          <option value="$5,000+" data-en="$5,000+" data-ar="$5,000+">$5,000+</option>
         </select>
       </div>
       <div class="form-group">
         <label data-en="Message" data-ar="الرسالة">Message</label>
-        <textarea placeholder="Tell me about your business and goals..." data-en-placeholder="Tell me about your business and goals..." data-ar-placeholder="أخبرني عن عملك وأهدافك..."></textarea>
+        <textarea name="Message" required placeholder="Tell me about your business and goals..." data-en-placeholder="Tell me about your business and goals..." data-ar-placeholder="أخبرني عن عملك وأهدافك..."></textarea>
       </div>
       <button type="submit" class="form-submit" data-en="Send Message →" data-ar="إرسال الرسالة ←">Send Message →</button>
     </form>
@@ -326,7 +330,10 @@
 
 <!-- TOAST -->
 <div class="toast" id="toast">Message sent! ✓</div>
-
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/201065085309" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#FFF" d="M16.05 2.01c-7.75 0-14.04 6.29-14.04 14.04 0 2.47.64 4.88 1.86 7.01L1.88 29.83l6.93-1.82c2.06 1.14 4.38 1.74 6.78 1.74h.01c7.74 0 14.03-6.29 14.03-14.04 0-3.75-1.46-7.28-4.11-9.94-2.66-2.65-6.19-4.11-9.94-4.11zm0 25.72h-.01c-2.09 0-4.14-.56-5.93-1.62l-.43-.25-4.41 1.16 1.18-4.3-.28-.44c-1.17-1.85-1.78-4-1.78-6.23 0-6.44 5.24-11.68 11.69-11.68 3.12 0 6.05 1.22 8.26 3.42 2.2 2.21 3.42 5.14 3.42 8.26 0 6.44-5.24 11.68-11.71 11.68zm6.41-8.77c-.35-.18-2.08-1.03-2.4-1.15-.32-.12-.55-.18-.78.18-.23.35-.91 1.15-1.12 1.38-.2.23-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.74-.11-.1-.85-.82-1.3-1.57-.2-.35-.02-.54.16-.71.16-.16.35-.41.53-.62.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.62-.09-.18-.78-1.89-1.07-2.58-.28-.68-.57-.59-.78-.6-.2-.01-.43-.01-.66-.01-.23 0-.61.09-.93.44s-1.23 1.21-1.23 2.94c0 1.74 1.26 3.42 1.44 3.65.18.23 2.49 3.8 6.03 5.33 2.42 1.05 3.32 1.14 4.54.96 1.28-.19 2.08-.85 2.37-1.68.29-.82.29-1.53.2-1.68-.09-.14-.32-.23-.67-.41z"/></svg>
+</a>
 <script src="script.js"></script>
 </body>
 </html>
