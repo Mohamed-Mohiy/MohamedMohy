@@ -48,3 +48,8 @@ html[dir="rtl"] .stat-value{font-size:clamp(26px,3.3vw,40px);white-space:nowrap;
 #whatsappLink:hover{background:#3ee27c}
 #emailLink{opacity:.7}
 #emailLink:hover{opacity:1}
+
+.wa-float{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.4);z-index:50;transition:transform .2s,background .2s}
+.wa-float:hover{transform:scale(1.08);background:#3ee27c}
+html[dir="rtl"] .wa-float{right:auto;left:22px}
+@media(max-width:760px){.wa-float{bottom:16px;right:16px;width:54px;height:54px}html[dir="rtl"] .wa-float{left:16px}}
