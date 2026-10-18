@@ -1,339 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohamed | Elite Meta Media Buyer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Mohamed Mohy — Media Buyer & Marketing Strategist. Paid advertising, campaign performance, and integrated marketing solutions.">
+  <title>Mohamed Mohy | Media Buyer & Marketing Strategist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- NAVIGATION -->
-<nav id="navbar">
-  <a href="#hero" class="nav-logo">Mohamed<span>.</span>Mohy</a>
-  <ul class="nav-links">
-    <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
-    <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
-    <li><a href="#portfolio" data-en="Work" data-ar="أعمالي">Work</a></li>
-    <li><a href="#results" data-en="Results" data-ar="النتائج">Results</a></li>
-    <li><a href="#testimonials" data-en="Testimonials" data-ar="آراء العملاء">Testimonials</a></li>
-    <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-en">EN</button>
-      <button class="lang-btn" id="btn-ar">AR</button>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mohamed Mohy home">
+      <span class="brand-mark">M<span>.</span></span>
+      <span class="brand-name">MOHAMED MOHY<span class="brand-sub">MEDIA BUYER & STRATEGIST</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#work" data-i18n="navWork">Case studies</a>
+      <a href="#team" data-i18n="navTeam">Our team</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
+      <a class="header-cta" href="#contact" data-i18n="navCta">Let's talk <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
-    <a href="#contact" class="btn-consult desktop" data-en="Book a Call" data-ar="احجز استشارة">Book a Call</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobile-menu">
-  <a href="#about" data-en="About" data-ar="عني">About</a>
-  <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
-  <a href="#portfolio" data-en="Work" data-ar="أعمالي">Work</a>
-  <a href="#results" data-en="Results" data-ar="النتائج">Results</a>
-  <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
-  <a href="#contact" class="btn-consult" data-en="Book a Call" data-ar="احجز استشارة">Book a Call</a>
-</div>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-accent"></div>
-  <div class="hero-content">
-    <div class="hero-tag" data-en="✦ Available for New Clients" data-ar="✦ متاح لعملاء جدد">✦ Available for New Clients</div>
-    <h1 class="hero-title">
-      <span data-en="Performance Media Buyer" data-ar="مشتري وسائط للأداء">Performance Media Buyer</span><br>
-      <em data-en="Scaling Brands" data-ar="يُضاعف نمو الأعمال">Scaling Brands</em>
-      <span data-en=" Through" data-ar=" عبر"> Through</span><br>
-      <span data-en="Data-Driven Ads" data-ar="إعلانات مبنية على البيانات">Data-Driven Ads</span>
-    </h1>
-    <p class="hero-sub" data-en="Meta Ads specialist with deep expertise in Facebook & Instagram advertising. I build and scale high-ROI campaigns for clinics, e-commerce brands, and service businesses." data-ar="متخصص في إعلانات Meta مع خبرة عميقة في إعلانات فيسبوك وإنستغرام. أبني وأُوسّع حملات ذات عائد استثمار مرتفع للعيادات والمتاجر الإلكترونية والأعمال الخدمية.">Meta Ads specialist with deep expertise in Facebook & Instagram advertising. I build and scale high-ROI campaigns for clinics, e-commerce brands, and service businesses.</p>
-    <div class="hero-ctas">
-      <a href="#portfolio" class="btn-primary" data-en="View My Work" data-ar="اطلع على أعمالي">View My Work</a>
-      <a href="#contact" class="btn-secondary" data-en="Book a Consultation" data-ar="احجز استشارة">Book a Consultation</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-card">
-        <div class="stat-number" id="stat-spend">$0</div>
-        <div class="stat-label" data-en="Total Ad Spend Managed" data-ar="إجمالي الإنفاق الإعلاني المُدار">Total Ad Spend Managed</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" id="stat-roas">0x</div>
-        <div class="stat-label" data-en="Average ROAS" data-ar="متوسط العائد على الإنفاق">Average ROAS</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" id="stat-clients">0+</div>
-        <div class="stat-label" data-en="Clients Served" data-ar="عملاء تمت خدمتهم">Clients Served</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" id="stat-campaigns">0+</div>
-        <div class="stat-label" data-en="Campaigns Launched" data-ar="حملات تم إطلاقها">Campaigns Launched</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-visual">
-    <div class="photo-frame" id="hero-photo-frame">
-      <!-- TODO: Replace this with your Hero/Profile image -->
-      <img id="hero-photo-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" style="width:100%;height:100%;object-fit:cover;" alt="Profile photo">
-      <div class="photo-badge">
-        <div class="badge-dot"></div>
-        <div>
-          <div class="badge-text" data-en="Meta Ads Specialist" data-ar="متخصص Meta Ads">Meta Ads Specialist</div>
-          <div class="badge-sub" data-en="Healthcare & E-Commerce" data-ar="الرعاية الصحية والتجارة الإلكترونية">Healthcare & E-Commerce</div>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">INDEPENDENT MEDIA BUYER · DIRECT CLIENT WORK</span></div>
+        <h1 data-i18n-html="heroTitle">Turning ad spend<br>into <em>business growth.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">I plan, manage, and optimize paid campaigns for businesses that want more than clicks — they want measurable progress.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#work"><span data-i18n="heroButton1">Explore case studies</span><span class="arrow">↗</span></a>
+          <a class="button button-quiet" href="#contact" data-i18n="heroButton2">Discuss a project <span class="arrow">↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-line"></div>
+          <p data-i18n="heroProof">Strategy-led campaigns. Creative execution. Clear reporting.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
-    <div>
-      <span class="section-eyebrow" data-en="About Me" data-ar="عني">About Me</span>
-      <h2 class="section-title" data-en="The Mind Behind the Metrics" data-ar="العقل وراء الأرقام">The Mind Behind the Metrics</h2>
-      <p style="font-size:16px;color:#666;line-height:1.8;margin-bottom:24px;" data-en="I'm a freelance Meta Media Buyer with a unique background — a final-year nursing student who discovered a passion for data-driven digital marketing. That combination gives me an edge in the healthcare niche that generalist media buyers can't match." data-ar="أنا مشتري وسائط إعلانية مستقل متخصص في Meta بخلفية فريدة — طالب تمريض في السنة الأخيرة اكتشف شغفه بالتسويق الرقمي القائم على البيانات. هذا الجمع يمنحني ميزة في قطاع الرعاية الصحية لا يستطيع توفيرها مشترو الوسائط الإعلانية العموميون.">I'm a freelance Meta Media Buyer with a unique background — a final-year nursing student who discovered a passion for data-driven digital marketing. That combination gives me an edge in the healthcare niche that generalist media buyers can't match.</p>
-
-      <div class="philosophy">
-        <div class="philosophy-label" data-en="My Philosophy" data-ar="فلسفتي">My Philosophy</div>
-        <p data-en="Every dollar you spend on ads is an investment that deserves a return. I approach every campaign like a scientist — test, measure, analyze, optimize, and scale what works. No guesswork, no vanity metrics, only real results." data-ar="كل دولار تنفقه على الإعلانات هو استثمار يستحق عائداً. أتعامل مع كل حملة كعالم — أختبر وأقيس وأحلل وأُحسّن وأُوسّع ما ينجح. لا تخمينات، لا مقاييس زائفة، نتائج حقيقية فقط.">Every dollar you spend on ads is an investment that deserves a return. I approach every campaign like a scientist — test, measure, analyze, optimize, and scale what works. No guesswork, no vanity metrics, only real results.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-year">2022</span>
-          <div class="timeline-content">
-            <h4 data-en="Started Media Buying" data-ar="بداية شراء الوسائط">Started Media Buying</h4>
-            <p data-en="Launched first Facebook Ads campaigns for local healthcare clients" data-ar="أطلقت أولى حملات فيسبوك لعملاء محليين في الرعاية الصحية">Launched first Facebook Ads campaigns for local healthcare clients</p>
+      <div class="hero-visual" aria-label="Advertising analytics visual">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <div class="dashboard-card">
+          <div class="dash-top"><span class="dash-label" data-i18n="dashLabel">CAMPAIGN OVERVIEW</span><span class="dash-live"><i></i><span data-i18n="dashLive">STRATEGY FIRST</span></span></div>
+          <div class="dash-title" data-i18n="dashTitle">Performance, not guesswork.</div>
+          <div class="dash-metrics">
+            <div><span data-i18n="dashMetric1">Objective</span><strong data-i18n="dashValue1">Growth</strong></div>
+            <div><span data-i18n="dashMetric2">Approach</span><strong data-i18n="dashValue2">Test · Learn</strong></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-year">2023</span>
-          <div class="timeline-content">
-            <h4 data-en="Scaled to Multiple Niches" data-ar="التوسع في قطاعات متعددة">Scaled to Multiple Niches</h4>
-            <p data-en="Expanded to e-commerce and service-based businesses across Egypt and Gulf" data-ar="توسعت نحو التجارة الإلكترونية والأعمال الخدمية في مصر والخليج">Expanded to e-commerce and service-based businesses across Egypt and Gulf</p>
+          <div class="chart-area">
+            <div class="chart-y"><span>100</span><span>75</span><span>50</span><span>25</span></div>
+            <svg viewBox="0 0 420 150" role="img" aria-label="Illustrative performance line chart">
+              <defs><linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#3985ff" stop-opacity=".35"/><stop offset="100%" stop-color="#3985ff" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 122 C35 115 40 94 75 102 S125 120 155 77 S205 90 230 55 S280 75 310 37 S365 44 420 10 L420 150 L0 150 Z" fill="url(#areaFill)"/>
+              <path d="M0 122 C35 115 40 94 75 102 S125 120 155 77 S205 90 230 55 S280 75 310 37 S365 44 420 10" fill="none" stroke="#68a5ff" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="310" cy="37" r="5" fill="#b9d6ff" stroke="#3985ff" stroke-width="3"/>
+              <circle cx="420" cy="10" r="5" fill="#b9d6ff" stroke="#3985ff" stroke-width="3"/>
+            </svg>
           </div>
+          <div class="chart-legend"><span><i class="legend-blue"></i><span data-i18n="dashLegend">Illustrative visual — not live account data</span></span><span>↗</span></div>
         </div>
-        <div class="timeline-item">
-          <span class="timeline-year">2024</span>
-          <div class="timeline-content">
-            <h4 data-en="Healthcare Niche Expert" data-ar="خبير في نيش الرعاية الصحية">Healthcare Niche Expert</h4>
-            <p data-en="Became the go-to specialist for clinics, doctors, and healthcare brands" data-ar="أصبحت المتخصص المرجعي للعيادات والأطباء والعلامات التجارية للرعاية الصحية">Became the go-to specialist for clinics, doctors, and healthcare brands</p>
+        <div class="floating-tag tag-top"><span class="tag-icon">↗</span><span data-i18n="floatTop">Built around business goals</span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-pulse"></span><span data-i18n="floatBottom">Test. Optimize. Scale.</span></div>
+        <div class="visual-caption">MM / 01</div>
+      </div>
+      <div class="hero-bottomline"><span data-i18n="heroBottom1">PAID MEDIA</span><span></span><span data-i18n="heroBottom2">PERFORMANCE STRATEGY</span><span></span><span data-i18n="heroBottom3">CREATIVE COLLABORATION</span></div>
+    </section>
+
+    <section class="stats-section" aria-label="Track record">
+      <div class="section-wrap">
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-label" data-i18n="sumClientsLabel">Clients served</span><strong class="stat-value" data-summary="clients" data-format="count">20+</strong><small data-i18n="sumClientsSub">Businesses managed directly</small></div>
+          <div class="stat-card"><span class="stat-label" data-i18n="sumSpendLabel">Ad spend managed</span><strong class="stat-value" data-summary="totalAdSpendEGP" data-format="compact">EGP 500K+</strong><small data-i18n="sumSpendSub">Across all campaigns</small></div>
+          <div class="stat-card"><span class="stat-label" data-i18n="sumRevenueLabel">Client revenue reported</span><strong class="stat-value" data-summary="totalClientRevenueEGP" data-format="compact">EGP 50M+</strong><small data-i18n="sumRevenueSub">Company revenue during campaign periods</small></div>
+        </div>
+        <p class="stats-note" data-i18n="sumNote">Revenue figures are reported by clients and reflect total company revenue, not revenue attributed to advertising alone.</p>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="section-wrap trust-inner">
+        <span data-i18n="trustLabel">EXPERIENCE ACROSS</span>
+        <strong data-i18n="industry1">Healthcare</strong><b>·</b><strong data-i18n="industry2">Construction & finishing</strong><b>·</b><strong data-i18n="industry3">Showrooms & retail</strong>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block about-section" id="about">
+      <div class="section-kicker"><span>01</span><span data-i18n="aboutKicker">ABOUT</span></div>
+      <div class="about-grid">
+        <div><h2 data-i18n-html="aboutTitle">Marketing decisions<br>with a <em>business mindset.</em></h2></div>
+        <div class="about-copy">
+          <p data-i18n="aboutText">I work directly with businesses to plan and manage paid advertising campaigns, connect campaign activity to commercial goals, and make optimization decisions based on performance data.</p>
+          <p data-i18n="aboutText2">Beyond campaign management, I coordinate with a dedicated creative and technical team to bring together advertising, video, design, and website development when a project needs a broader solution.</p>
+          <div class="about-tags"><span data-i18n="aboutTag1">Direct client collaboration</span><span data-i18n="aboutTag2">Performance-focused</span><span data-i18n="aboutTag3">Cross-functional team</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block services-section" id="services">
+      <div class="section-heading">
+        <div><div class="section-kicker"><span>02</span><span data-i18n="servicesKicker">WHAT I DO</span></div><h2 data-i18n-html="servicesTitle">From strategy to<br><em>execution.</em></h2></div>
+        <p data-i18n="servicesIntro">A focused media-buying practice supported by creative and technical specialists, so businesses can coordinate the key parts of their digital marketing in one place.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><span class="service-number">01 / MEDIA</span><div class="service-icon">◉</div><h3 data-i18n="service1Title">Paid Advertising</h3><p data-i18n="service1Text">Campaign planning, account structure, audience targeting, budget allocation, and ongoing optimization.</p><span class="service-line"></span></article>
+        <article class="service-card"><span class="service-number">02 / ANALYTICS</span><div class="service-icon">⌁</div><h3 data-i18n="service2Title">Performance Analysis</h3><p data-i18n="service2Text">Performance monitoring, testing, reporting, and practical recommendations based on campaign data.</p><span class="service-line"></span></article>
+        <article class="service-card"><span class="service-number">03 / CREATIVE</span><div class="service-icon">▧</div><h3 data-i18n="service3Title">Creative Production</h3><p data-i18n="service3Text">Team-supported video production, ad creatives, graphic design, and content assets built around campaign goals.</p><span class="service-line"></span></article>
+        <article class="service-card"><span class="service-number">04 / DIGITAL</span><div class="service-icon">⌘</div><h3 data-i18n="service4Title">Website Development</h3><p data-i18n="service4Text">Business websites and landing experiences delivered with technical collaborators when needed.</p><span class="service-line"></span></article>
+      </div>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-wrap section-block">
+        <div class="section-heading work-heading">
+          <div><div class="section-kicker"><span>03</span><span data-i18n="workKicker">SELECTED WORK</span></div><h2 data-i18n-html="workTitle">Real projects.<br><em>Clear context.</em></h2></div>
+          <p data-i18n="workIntro">A selection of campaign experience across different business models. Add your own campaign screenshots, creatives, videos, and supporting evidence to each project.</p>
+        </div>
+
+        <article class="case-card case-featured">
+          <div class="case-head"><div><span class="case-type" data-i18n="case1Type">HEALTHCARE · PATIENT ACQUISITION</span><h3 data-i18n="case1Title">Patient acquisition campaign</h3></div><span class="case-index">CASE / 01</span></div>
+          <p class="case-description" data-i18n="case1Desc">A three-month campaign focused on increasing real patient bookings and visits for a medical center.</p>
+          <div class="case-stats">
+            <div class="case-stat"><span data-i18n="statSpend">Reported ad spend</span><strong data-key="healthcare.adSpendEGP" data-format="currency">EGP 35,000</strong><small data-i18n="stat3months">Across 3 months</small></div>
+            <div class="case-stat"><span data-i18n="statMonth1">Month 1 patients</span><strong data-key="healthcare.monthlyPatients.0" data-format="number">90</strong><small data-i18n="statPatients">Reported patients</small></div>
+            <div class="case-stat"><span data-i18n="statMonth2">Month 2 patients</span><strong data-key="healthcare.monthlyPatients.1" data-format="number">110</strong><small data-i18n="statPatients">Reported patients</small></div>
+            <div class="case-stat"><span data-i18n="statMonth3">Month 3 patients</span><strong data-key="healthcare.monthlyPatients.2" data-format="number">120</strong><small data-i18n="statPatients">Reported patients</small></div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-year">2025</span>
-          <div class="timeline-content">
-            <h4 data-en="Building & Scaling" data-ar="البناء والتوسع">Building & Scaling</h4>
-            <p data-en="Growing a portfolio of high-performing campaigns across diverse industries" data-ar="توسيع محفظة من الحملات عالية الأداء عبر صناعات متنوعة">Growing a portfolio of high-performing campaigns across diverse industries</p>
+          <div class="gallery-grid gallery-health">
+            <div class="media-slot media-wide"><span class="slot-icon">＋</span><span data-i18n="slotMain">Main campaign visual</span><small>healthcare-main.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotAdManager">Ads Manager screenshots</span><small>healthcare-results-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotCreatives">Ad creatives</span><small>healthcare-creative-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotVideo">Video / content examples</span><small>healthcare-video-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotMore">Additional campaign images</span><small>healthcare-extra-01.jpg</small></div>
           </div>
+          <p class="case-note" data-i18n="case1Note">Figures represent reported monthly patient counts, not necessarily unique individuals. Ad spend excludes creative production costs.</p>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head"><div><span class="case-type" data-i18n="case2Type">CONSTRUCTION · ENGAGEMENT & INQUIRIES</span><h3 data-i18n="case2Title">Construction & finishing campaigns</h3></div><span class="case-index">CASE / 02</span></div>
+          <p class="case-description" data-i18n="case2Desc">Awareness and message-based engagement campaigns supported customer conversations handled through messaging and phone calls.</p>
+          <div class="case-stats case-stats-two">
+            <div class="case-stat"><span data-i18n="statSpend">Reported ad spend</span><strong data-key="construction.adSpendEGP" data-format="currency">EGP 30,000</strong><small data-i18n="stat4months">Across 4 months</small></div>
+            <div class="case-stat"><span data-i18n="statRevenue">Reported company revenue</span><strong data-key="construction.reportedCompanyRevenueEGP" data-format="currency">EGP 1,300,000</strong><small data-i18n="statRevenuePeriod">During the campaign period</small></div>
+          </div>
+          <div class="gallery-grid gallery-3">
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotCampaign">Campaign screenshots</span><small>construction-campaign-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotCreatives">Ad creatives</span><small>construction-creative-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotProjects">Completed projects</span><small>construction-project-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotVideo">Video / content examples</span><small>construction-video-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotMore">Additional campaign images</span><small>construction-extra-01.jpg</small></div>
+          </div>
+          <p class="case-note" data-i18n="case2Note">Revenue is the reported company revenue during this period; the portion directly attributable to advertising has not been independently verified.</p>
+        </article>
+
+        <article class="case-card">
+          <div class="case-head"><div><span class="case-type" data-i18n="case3Type">SHOWROOMS · MULTI-LOCATION MARKETING</span><h3 data-i18n="case3Title">Multi-showroom growth campaigns</h3></div><span class="case-index">CASE / 03</span></div>
+          <p class="case-description" data-i18n="case3Desc">Paid campaigns supporting a business operating multiple showrooms, with campaign activity coordinated across locations.</p>
+          <div class="case-stats case-stats-two">
+            <div class="case-stat"><span data-i18n="statSpend">Reported ad spend</span><strong data-key="multiShowroom.reportedAdSpendEGP" data-format="currency">EGP 250,000</strong><small data-i18n="statAllShowrooms">Across the reported period</small></div>
+            <div class="case-stat"><span data-i18n="statRevenue">Reported company revenue</span><strong data-key="multiShowroom.reportedCompanyRevenueEGP" data-format="currency">EGP 25,000,000</strong><small data-i18n="statAllShowrooms">Across all showrooms</small></div>
+          </div>
+          <div class="gallery-grid gallery-3">
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotShowroom">Showroom photography</span><small>showroom-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotAdManager">Ads Manager screenshots</span><small>showroom-results-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotCreatives">Ad creatives</span><small>showroom-creative-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotProjects">Completed projects</span><small>showroom-project-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotMore">Additional campaign images</span><small>showroom-extra-01.jpg</small></div>
+          </div>
+          <p class="case-note" data-i18n="case3Note">Reported company-wide revenue, not verified ad-attributed revenue. Confirm that the spend and revenue periods match before publishing.</p>
+        </article>
+
+        <article class="case-card case-last">
+          <div class="case-head"><div><span class="case-type" data-i18n="case4Type">CONSTRUCTION SECTOR · MULTIPLE BUSINESSES</span><h3 data-i18n="case4Title">Campaigns across additional businesses</h3></div><span class="case-index">CASE / 04</span></div>
+          <p class="case-description" data-i18n="case4Desc">Worked with other businesses in the same sector, including two showrooms and two factories, with monthly media budgets and campaign support aligned to operational demand.</p>
+          <div class="case-stats case-stats-two">
+            <div class="case-stat"><span data-i18n="statMonthlySpend">Approx. monthly ad spend</span><strong data-key="additionalBusinesses.approximateMonthlyAdSpendEGP" data-format="currency">EGP 15,000</strong><small data-i18n="statPerBusiness">For one additional business</small></div>
+            <div class="case-stat"><span data-i18n="statScope">Business scope</span><strong data-i18n="statScopeValue">2 showrooms + 2 factories</strong><small data-i18n="statNoRevenue">Revenue figures not published</small></div>
+          </div>
+          <div class="gallery-grid gallery-3">
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotFactory">Factory visuals</span><small>factory-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotShowroom">Showroom photography</span><small>business-showroom-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotCampaign">Campaign screenshots</span><small>business-campaign-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotVideo">Video / content examples</span><small>business-video-01.jpg</small></div>
+            <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotMore">Additional campaign images</span><small>business-extra-01.jpg</small></div>
+          </div>
+          <p class="case-note" data-i18n="case4Note">The approximate EGP 100,000 across several businesses in this sector is not shown as a separate total until the exact scope and period are confirmed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block team-section" id="team">
+      <div class="section-kicker"><span>04</span><span data-i18n="teamKicker">INTEGRATED DELIVERY</span></div>
+      <div class="team-layout">
+        <div><h2 data-i18n-html="teamTitle">One strategy.<br><em>A full team behind it.</em></h2><p class="team-intro" data-i18n="teamIntro">I collaborate with a dedicated team of creative and technical specialists, helping businesses bring campaign strategy and execution together without coordinating every service separately.</p><a class="text-link" href="#contact"><span data-i18n="teamLink">Build your marketing setup</span> ↗</a></div>
+        <div class="team-services">
+          <div class="team-service"><span class="team-service-no">01</span><div><h3 data-i18n="team1Title">Video production</h3><p data-i18n="team1Text">Promotional videos, short-form content, and campaign footage.</p></div><span class="team-arrow">↗</span></div>
+          <div class="team-service"><span class="team-service-no">02</span><div><h3 data-i18n="team2Title">Graphic design</h3><p data-i18n="team2Text">Ad creatives, social media designs, and visual assets.</p></div><span class="team-arrow">↗</span></div>
+          <div class="team-service"><span class="team-service-no">03</span><div><h3 data-i18n="team3Title">Website development</h3><p data-i18n="team3Text">Business websites and landing pages built with technical collaborators.</p></div><span class="team-arrow">↗</span></div>
+          <div class="team-service"><span class="team-service-no">04</span><div><h3 data-i18n="team4Title">Campaign management</h3><p data-i18n="team4Text">Planning, media buying, optimization, and reporting.</p></div><span class="team-arrow">↗</span></div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="about-photo">
-        <!-- TODO: Replace this with your secondary/about profile image -->
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" style="width:100%;height:100%;object-fit:cover;" alt="About Me">
+      <div class="team-gallery">
+        <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotVideoProduction">Video production stills</span><small>team-video-01.jpg</small></div>
+        <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotDesignBoard">Design portfolio</span><small>team-design-01.jpg</small></div>
+        <div class="media-slot"><span class="slot-icon">＋</span><span data-i18n="slotWebsite">Website examples</span><small>team-website-01.jpg</small></div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="section-header">
-    <span class="section-eyebrow" data-en="What I Do" data-ar="ماذا أفعل">What I Do</span>
-    <h2 class="section-title" data-en="Premium Advertising Services" data-ar="خدمات إعلانية متميزة">Premium Advertising Services</h2>
-    <p class="section-sub" data-en="End-to-end Meta advertising solutions built for performance, precision, and scalable growth." data-ar="حلول إعلانية شاملة على Meta مبنية على الأداء والدقة والنمو القابل للتوسع.">End-to-end Meta advertising solutions built for performance, precision, and scalable growth.</p>
-  </div>
-  <div class="services-grid" id="services-grid">
-    <!-- JS renders these -->
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="section-header reveal">
-    <span class="section-eyebrow" data-en="Case Studies" data-ar="دراسات حالة">Case Studies</span>
-    <h2 class="section-title" data-en="Results That Speak" data-ar="نتائج تتحدث">Results That Speak</h2>
-    <p class="section-sub" data-en="Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision." data-ar="حملات حقيقية، أرقام حقيقية. كل مشروع شاهد على استراتيجية مبنية على البيانات ومنفذة بدقة.">Real campaigns, real numbers. Each project is a testament to data-driven strategy executed with precision.</p>
-  </div>
-  <div class="portfolio-grid" id="portfolio-grid">
-    <!-- JS renders projects -->
-  </div>
-</section>
-
-<!-- PROJECT MODAL -->
-<div class="modal-overlay" id="modal-overlay">
-  <div class="modal" id="modal-content">
-    <button class="modal-close" id="modal-close">✕</button>
-    <div id="modal-body"></div>
-  </div>
-</div>
-
-<!-- RESULTS DASHBOARD -->
-<section id="results">
-  <div class="section-header reveal">
-    <span class="section-eyebrow" data-en="Performance Dashboard" data-ar="لوحة الأداء">Performance Dashboard</span>
-    <h2 class="section-title" data-en="The Numbers Tell the Story" data-ar="الأرقام تروي القصة">The Numbers Tell the Story</h2>
-    <p class="section-sub" data-en="Live KPIs from across my managed campaigns — updated regularly to reflect current performance benchmarks." data-ar="مؤشرات أداء رئيسية من حملاتي المُدارة — يتم تحديثها بانتظام لتعكس معايير الأداء الحالية.">Live KPIs from across my managed campaigns — updated regularly to reflect current performance benchmarks.</p>
-  </div>
-  <div class="kpi-grid" id="kpi-grid"></div>
-  <div class="chart-container reveal" style="margin-top:32px;">
-    <div class="chart-title" data-en="Monthly Revenue Generated for Clients (USD)" data-ar="الإيرادات الشهرية المحققة للعملاء (دولار)">Monthly Revenue Generated for Clients (USD)</div>
-    <div class="bar-chart" id="bar-chart"></div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="section-header reveal">
-    <span class="section-eyebrow" data-en="Client Testimonials" data-ar="آراء العملاء">Client Testimonials</span>
-    <h2 class="section-title" data-en="What Clients Say" data-ar="ماذا يقول العملاء">What Clients Say</h2>
-  </div>
-  <div class="testimonials-grid" id="testimonials-grid"></div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-header reveal">
-    <span class="section-eyebrow" data-en="Credentials" data-ar="المؤهلات">Credentials</span>
-    <h2 class="section-title" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
-  </div>
-  <div class="certs-grid" id="certs-grid">
-    <div class="cert-card">
-      <!-- TODO: Replace this with your Meta Blueprint certificate image -->
-      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80" alt="Meta Blueprint">
-      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
-    </div>
-    <div class="cert-card">
-      <!-- TODO: Replace this with your Google Analytics certificate image -->
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Google Analytics">
-      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
-    </div>
-    <div class="cert-card">
-      <!-- TODO: Replace this with your Digital Marketing certificate image -->
-      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="Digital Marketing">
-      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
-    </div>
-    <div class="cert-card">
-      <!-- TODO: Replace this with your additional certificate image -->
-      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" alt="Additional Certificate">
-      <div class="cert-overlay"><span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- TOOLS -->
-<section id="tools">
-  <div class="section-header reveal">
-    <span class="section-eyebrow" data-en="Tech Stack" data-ar="الأدوات">Tech Stack</span>
-    <h2 class="section-title" data-en="Tools & Skills" data-ar="الأدوات والمهارات">Tools & Skills</h2>
-  </div>
-  <div class="tools-grid" id="tools-grid"></div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <span class="section-eyebrow" data-en="Let's Work Together" data-ar="لنعمل معاً">Let's Work Together</span>
-      <h2 class="section-title" data-en="Ready to Scale Your Brand?" data-ar="مستعد لتوسيع علامتك؟">Ready to Scale Your Brand?</h2>
-      <p data-en="Whether you're a clinic looking to attract more patients, or an e-commerce brand ready to grow — let's build something exceptional together." data-ar="سواء كنت عيادة تبحث عن جذب المزيد من المرضى، أو علامة تجارية إلكترونية مستعدة للنمو — لنبني شيئاً استثنائياً معاً.">Whether you're a clinic looking to attract more patients, or an e-commerce brand ready to grow — let's build something exceptional together.</p>
-      <a href="mailto:your@email.com" class="contact-link">
-        <div class="contact-link-icon">✉</div>
-        <div class="contact-link-text">
-          <strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong>
-          <span id="contact-email">your@email.com</span>
+    <section class="skills-section">
+      <div class="section-wrap skills-inner">
+        <div><div class="section-kicker"><span>05</span><span data-i18n="skillsKicker">CAPABILITIES</span></div><h2 data-i18n-html="skillsTitle">The skills behind<br><em>the work.</em></h2></div>
+        <div class="skills-list">
+          <span>Meta Ads</span><span>Campaign Strategy</span><span>Audience Targeting</span><span>Budget Optimization</span><span>Performance Reporting</span><span>Content Strategy</span><span>Python — Basics</span><span>HTML & CSS</span><span>JavaScript — Fundamentals</span>
         </div>
-      </a>
-      <a href="https://wa.me/201000000000" class="contact-link" target="_blank">
-        <div class="contact-link-icon">📱</div>
-        <div class="contact-link-text">
-          <strong>WhatsApp</strong>
-          <span id="contact-whatsapp" data-en="Message me directly" data-ar="راسلني مباشرة">Message me directly</span>
-        </div>
-      </a>
-      <a href="https://linkedin.com/in/" class="contact-link" target="_blank">
-        <div class="contact-link-icon">💼</div>
-        <div class="contact-link-text">
-          <strong>LinkedIn</strong>
-          <span data-en="View my professional profile" data-ar="اطلع على ملفي المهني">View my professional profile</span>
-        </div>
-      </a>
-      <a href="https://instagram.com/" class="contact-link" target="_blank">
-        <div class="contact-link-icon">📸</div>
-        <div class="contact-link-text">
-          <strong>Instagram</strong>
-          <span data-en="Follow for marketing insights" data-ar="تابع للحصول على رؤى تسويقية">Follow for marketing insights</span>
-        </div>
-      </a>
-    </div>
+        <p class="skills-note" data-i18n="skillsNote">Professional learning includes self-directed study and practical application. No unverified certifications are claimed.</p>
+      </div>
+    </section>
 
-    <form class="contact-form" action="https://formsubmit.co/YOUR_EMAIL@GMAIL.COM" onsubmit="handleFormSubmit(event)">
-      <!-- إعدادات مخفية لخدمة إرسال الإيميل -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Lead from Portfolio!">
-      
-      <div class="form-group">
-        <label data-en="Your Name" data-ar="اسمك">Your Name</label>
-        <input type="text" name="Name" required placeholder="Ahmed Al-Rashid" data-en-placeholder="Ahmed Al-Rashid" data-ar-placeholder="أحمد الراشد">
+    <section class="section-wrap section-block contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="section-kicker"><span>06</span><span data-i18n="contactKicker">LET'S WORK TOGETHER</span></div>
+        <h2 data-i18n-html="contactTitle">Have a growth goal?<br><em>Let's plan for it.</em></h2>
+        <p data-i18n="contactText">Tell me about your business, your current challenges, and what you want your marketing to achieve.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" id="emailLink" href="mailto:mohamedmohyn2@gmail.com"><span data-i18n="contactEmail">Email me</span> ↗</a>
+          <a class="button button-quiet" id="whatsappLink" href="https://wa.me/201065085309" target="_blank" rel="noreferrer"><span data-i18n="contactWhatsApp">WhatsApp</span> ↗</a>
+        </div>
+        <div class="contact-details"><span>mohamedmohyn2@gmail.com</span><span>+20 106 508 5309</span></div>
       </div>
-      <div class="form-group">
-        <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
-        <input type="email" name="Email" required placeholder="your@email.com">
-      </div>
-      <div class="form-group">
-        <label data-en="Business Type" data-ar="نوع العمل">Business Type</label>
-        <select name="Business Type" required>
-          <option value="" data-en="Select your niche..." data-ar="اختر مجالك...">Select your niche...</option>
-          <option value="Healthcare" data-en="Healthcare / Clinic" data-ar="رعاية صحية / عيادة">Healthcare / Clinic</option>
-          <option value="E-Commerce" data-en="E-Commerce / Dropshipping" data-ar="تجارة إلكترونية">E-Commerce / Dropshipping</option>
-          <option value="Service" data-en="Service Business" data-ar="أعمال خدمية">Service Business</option>
-          <option value="Other" data-en="Other" data-ar="أخرى">Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label data-en="Monthly Ad Budget" data-ar="الميزانية الإعلانية الشهرية">Monthly Ad Budget</label>
-        <select name="Budget" required>
-          <option value="< $500" data-en="Less than $500" data-ar="أقل من $500">Less than $500</option>
-          <option value="$500 - $2,000" data-en="$500 – $2,000" data-ar="$500 – $2,000">$500 – $2,000</option>
-          <option value="$2,000 - $5,000" data-en="$2,000 – $5,000" data-ar="$2,000 – $5,000">$2,000 – $5,000</option>
-          <option value="$5,000+" data-en="$5,000+" data-ar="$5,000+">$5,000+</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label data-en="Message" data-ar="الرسالة">Message</label>
-        <textarea name="Message" required placeholder="Tell me about your business and goals..." data-en-placeholder="Tell me about your business and goals..." data-ar-placeholder="أخبرني عن عملك وأهدافك..."></textarea>
-      </div>
-      <button type="submit" class="form-submit" data-en="Send Message →" data-ar="إرسال الرسالة ←">Send Message →</button>
-    </form>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">
-    <a href="#hero" class="nav-logo">M<span>.</span>Ahmed</a>
-    <p data-en="Elite Meta Media Buyer · Healthcare & E-Commerce Specialist" data-ar="مشتري وسائط إعلانية من Meta · متخصص في الرعاية الصحية والتجارة الإلكترونية">Elite Meta Media Buyer · Healthcare & E-Commerce Specialist</p>
-  </div>
-  <div class="footer-copy" data-en="© 2025 Mohamed Ahmed. All rights reserved." data-ar="© 2025 محمد أحمد. جميع الحقوق محفوظة.">© 2025 Mohamed Ahmed. All rights reserved.</div>
-</footer>
-
-<!-- TOAST -->
-<div class="toast" id="toast">Message sent! ✓</div>
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/201065085309" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#FFF" d="M16.05 2.01c-7.75 0-14.04 6.29-14.04 14.04 0 2.47.64 4.88 1.86 7.01L1.88 29.83l6.93-1.82c2.06 1.14 4.38 1.74 6.78 1.74h.01c7.74 0 14.03-6.29 14.03-14.04 0-3.75-1.46-7.28-4.11-9.94-2.66-2.65-6.19-4.11-9.94-4.11zm0 25.72h-.01c-2.09 0-4.14-.56-5.93-1.62l-.43-.25-4.41 1.16 1.18-4.3-.28-.44c-1.17-1.85-1.78-4-1.78-6.23 0-6.44 5.24-11.68 11.69-11.68 3.12 0 6.05 1.22 8.26 3.42 2.2 2.21 3.42 5.14 3.42 8.26 0 6.44-5.24 11.68-11.71 11.68zm6.41-8.77c-.35-.18-2.08-1.03-2.4-1.15-.32-.12-.55-.18-.78.18-.23.35-.91 1.15-1.12 1.38-.2.23-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.74-.11-.1-.85-.82-1.3-1.57-.2-.35-.02-.54.16-.71.16-.16.35-.41.53-.62.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.62-.09-.18-.78-1.89-1.07-2.58-.28-.68-.57-.59-.78-.6-.2-.01-.43-.01-.66-.01-.23 0-.61.09-.93.44s-1.23 1.21-1.23 2.94c0 1.74 1.26 3.42 1.44 3.65.18.23 2.49 3.8 6.03 5.33 2.42 1.05 3.32 1.14 4.54.96 1.28-.19 2.08-.85 2.37-1.68.29-.82.29-1.53.2-1.68-.09-.14-.32-.23-.67-.41z"/></svg>
-</a>
-<script src="script.js"></script>
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MOHAMED MOHY<span class="brand-sub">MEDIA BUYER & STRATEGIST</span></span></a>
+    <span data-i18n="footerText">Independent media buying · Integrated marketing collaboration</span>
+    <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+  </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
