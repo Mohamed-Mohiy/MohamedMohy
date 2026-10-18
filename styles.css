@@ -43,3 +43,8 @@ html[dir="rtl"] .stat-label{letter-spacing:0}
   html[dir="rtl"] .stat-card{border-left:0}
 }
 html[dir="rtl"] .stat-value{font-size:clamp(26px,3.3vw,40px);white-space:nowrap;line-height:1.35}
+
+#whatsappLink{background:#25D366;color:#06210f;box-shadow:0 8px 30px #25d36633}
+#whatsappLink:hover{background:#3ee27c}
+#emailLink{opacity:.7}
+#emailLink:hover{opacity:1}
